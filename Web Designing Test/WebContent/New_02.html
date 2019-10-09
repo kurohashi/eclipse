@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+function change()
+{
+var value = document.getElementById("State").value;	
+var value2 = document.getElementById("Districts").options;
+alert('dcdc');
+if (value == 'Rajasthan') {
+	value[1].value = 'Jaipur';
+	value[2].value = 'Jodhpur';
+} else (value == 'Delhi') {
+	value[1].value = 'Palam';
+	value[2].value = 'SW Delhi';
+}
+}
+</script>
+</head>
+<body>
+<!--  <form><input type="submit" formaction="#" formmethod="post" formtarget="_new"></form>
+<a href="https://encrypted.google.com/">
+<input type="button" value="Visit Google">
+</a>
+<br><br>
+<input type="button" onclick="window.location='https://encrypted.google.com/';" value="Google">
+-->
+<select id = "State" onchange="change()">
+<option value = "1">Rajasthan</option>
+<option value = "2">Delhi</option> 
+</select>
+<select name = "Districts">
+<option value = "1"></option>
+<option value = "2"></option>
+</select>
+</body>
+
+</html>

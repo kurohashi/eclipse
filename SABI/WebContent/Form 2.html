@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<script src="railjs.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bus Form</title>
+<style>
+</style>
+</head>
+<body style=" background:url(Images/toys-bus_00350642.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed;">
+<fieldset>
+<legend style="font-size:30px; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; color:#FFF; font-weight:bold;">Bus Ticket Booking Form</legend>
+<pre>
+<form name="input" action="Reciever" method="get" style="padding-left:20%;" target="_new">
+<p style="font-size:20px; color:#FFF; font-family:'Comic Sans MS', cursive;">Journey Details:-</p>
+       <b>From:</b>    <input  id="d" type="text" maxlength="15" autocomplete="off" watermark="Source" placeholder="Source" />                               <b>To:</b>    <input  id="a"type="text" maxlength="15" autocomplete="off" watermark="Destination" placeholder="Destination" />
+  
+  
+  <b>Full Name:</b>    <input  id="fn" type="text" maxlength="30" autocomplete="off" watermark="your name" placeholder="Your Name" style="width:20%" />                        
+       
+       
+        <b>Sex:</b>    
+       
+        Male  <input id="gender" type="radio" value="Male" name="ge" />         
+        Female<input id="gender2" type="radio" value="Female" name="ge" />
+
+
+       
+        <b>Age:</b>    <input  id="age" type="text" maxlength="2" autocomplete="off" style="width:2%" />                                  
+
+
+<b>Nationality:</b>    <input  id="na" type="text" maxlength="20" autocomplete="off" watermark="Country" placeholder="Country" />
+
+
+
+      <b>Class:</b>    <select name="class"><option selected="selected" value="Sleeper">SL</option><option value="Chair Car">CC</option></select>
+            
+   
+   <b>Bus Type:</b>    <select name="type"><option selected="selected" value="all">ALL</option><option value="Janta">Janta</option><option value="Mini">Mini</option><option value="Ordinary">Ordinary</option><option value="Sleeper">SL</option><option value="AC">AC</option></select>                                      
+
+       
+       <b>Date:</b>    <input  id="date" type="date" watermark="DD-MM-YY" placeholder="DD-MM-YY" maxlength="8" />
+
+  
+    
+    <b>Contact:</b> 
+       Mob.:    <input  id="mobile" type="text" maxlength="11" autocomplete="off" watermark="Mobile No." placeholder="Mobile No." />                            
+      Phone:    <input id="code" type="text" maxlength="3" autocomplete="off" style="width:3%" />-<input id="number" type="text" maxlength="8" autocomplete="off" style="width:7%" />
+      
+      
+     <b>E-mail:</b>    <input id="email" type="email" maxlength="30" autocomplete="off" watermark="Mailing Address" placeholder="Mailing Address" />
+
+
+<i style=" color:rgb(212,0,0)">I accept the terms & service and privacy policy of the SABI Online Reservation System </i> <input type="checkbox" />
+
+
+                                      <a href="index.htm"><input type="button" value="Home"></a> <input type="submit" onclick="pop()" value="Submit"> <input type="reset" value="Reset">
+</form></pre></fieldset>
+</body>
+</html>

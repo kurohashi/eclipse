@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Application form</title>
+<style type="text/css">
+th {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+</style>
+</head>
+<body bgcolor="">
+
+<h1 align="center">NxtLife Technologies</h1>
+<form action="DataReceiver" method="GET">
+
+<table align="center">
+<tr align="left">
+<th>Name:</th> <th><input type="text" name="name" placeholder="full name" /></th>
+</tr>
+<tr align="left">
+<th>Technologies that you know:</th> <th><input type="text" name="technologies" /></th>
+</tr>
+<tr align="left">
+<th>Minimum number of months that you can commit:</th> <th><input type="number" name="number_of_months_to_commit" maxlength="1" style="width: 25px" /></th>
+</tr>
+<tr align="left">
+<th>Latest date of joining:</th> <th><input type="number" name="dd" maxlength="2" placeholder="dd" style="width: 30px" />
+						<input type="number" name="mm" maxlength="2" placeholder="mm" style="width: 30px" />
+						<input type="number" name="yy" maxlength="4" placeholder="yyyy" style="width: 50px" /></th>
+</tr>
+<tr align="left">
+<th>Contact info.</th> <th><input type="number" name="mob" maxlength="13" placeholder="mobile no." /></th>
+</tr>
+<tr align="left">
+<th>Email</th> <th><input type="email" name="email" placeholder="email" /></th>
+</tr>
+<tr>
+<th align="right"><input type="reset" value="Reset entries" /></th>
+<th align="left"><input type="submit" value="Submit" /></th>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

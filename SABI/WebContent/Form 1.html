@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Railway Form</title>
+<script src="railjs.js"></script>
+<style>
+</style>
+</head>
+<body style=" background:url(Images/super_train.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed;">
+<fieldset>
+<legend style="font-size:30px; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; color:#FFF; font-weight:bold;">Railway Ticket Booking Form</legend>
+<pre>
+<form name="input" action="Reciever" method="put" style="padding-left:20%;" target="_new">
+<p style="font-size:20px; color:#FFF; font-family:'Comic Sans MS', cursive;">Journey Details:-</p>
+       <b>From:</b>    <input name="source" id="d" type="text" maxlength="15" autocomplete="off" watermark="Source" placeholder="Source" />                               <b>To:</b>    <input name="destination" id="a"type="text" maxlength="15" autocomplete="off" watermark="Destination" placeholder="Destination" />
+ <b>First Name:</b>    <input name="name" id="fn" type="text" maxlength="10" autocomplete="off" watermark="first word" placeholder="First Word" />                        <b>Last Name:</b>    <input name="name" id="ln" type="text" maxlength="10" autocomplete="off" watermark="last word" placeholder="Last Word" />
+       
+       
+        <b>Sex:</b>    Male  <input id="genderm" type="radio" value="Male" name="ge" />         Female  <input id="genderf" type="radio" value="Female" name="ge" />
+
+
+       
+        <b>Age:</b>    <input  id="age" type="text" maxlength="2" autocomplete="off" style="width:2%" name="age" />                                  
+
+
+<b>Nationality:</b>    <input  id="na" type="text" maxlength="20" autocomplete="off" watermark="Country" placeholder="Country" name="nationality" />
+
+
+  <b>Age Group:</b>    <select name="agegroup"><option>Child(<=12)</option><option selected>Adult(18-60)</option><option>Teen(12-18)</option><option>Aged(>=60)</option></select>
+
+
+      <b>Berth:</b>    <select name="berth"><option selected>All</option><option>Upper</option><option>Midle</option><option>Lower</option><option>Side Upper</option><option>Side Lower</option></select>
+
+
+      <b>Class:</b>    <select name="class"><option selected="selected" value="Sleeper">SL</option><option value="First AC">1A</option><option value="Second AC">2A</option><option value="Third AC">3A</option><option value="Chair Car">CC</option><option value="2nd Sleeper">2S</option><option value="First Class">FC</option><option value="General">GN</option></select>                                       <b>Quota:</b>    <select name="quota"><option value="GN" selected="selected">General</option><option value="CK">Tatkal</option><option value="FT">Foreign</option><option value="DF">Defence</option><option value="LD">Ladies</option><option value="SS">Lower Berth</option><option value="YU">Yuva</option><option value="HP">Handicaped</option><option value="HO">Head quarters</option><option value="DP">Duty Pass</option><option value="PH">Parliament</option></select>
+
+
+       <b>Date:</b>    <input name="date"  id="date" type="date" watermark="DD-MM-YY" placeholder="DD-MM-YY" maxlength="8" />
+
+  <b>Train No.:</b>    <input name="vehiclenumber"  id="tn" type="number" maxlength="5" autocomplete="off" watermark="train id" placeholder="Train ID" />
+  
+    
+    <b>Contact:</b> 
+       Mob.:    <input  id="mobile" type="text" maxlength="11" autocomplete="off" watermark="Mobile No." placeholder="Mobile No." />                            Phone:    <input id="code" type="text" maxlength="3" autocomplete="off" style="width:3%" />-<input id="number" type="text" maxlength="8" autocomplete="off" style="width:7%" />
+       
+       
+     <b>E-mail:</b>    <input id="email" type="email" maxlength="30" autocomplete="off" watermark="Mailing Address" placeholder="Mailing Address" />
+
+
+<i style=" color:rgb(212,0,0)">I accept the terms & service and privacy policy of the SABI Online Reservation System </i> <input type="checkbox" autocomplete="off" />
+
+
+                                      <a href="index.htm" style="text-decoration:blink;"><input type="button" value="Home"></a> <input type="submit" onClick="pop()" value="Submit"> <input type="reset" value="Reset">
+</form></pre></fieldset>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Airways Reservation</title>
+<script src="railjs.js"></script>
+<style>
+</style>
+</head>
+<body style=" background:url(Images/airplane_by_paullus23-d58794k.jpg); background-repeat:no-repeat; background-size:cover; background-attachment:fixed;">
+<fieldset>
+<legend style="font-size:30px; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; color:#FFF; font-weight:bold;">Airways Ticket Booking Form</legend>
+<pre>
+<form name="input" action="Reciever" method="get" style="padding-left:20%;" target="_new">
+<p style="font-size:20px; color:#FFF; font-family:'Comic Sans MS', cursive;">Journey Details:-</p>
+  <b>Full Name:</b>    <select name="salutation"><option selected="selected" value="Mister">Mr.</option><option value="Miss">Ms.</option> <input  id="fn" type="text" maxlength="10" autocomplete="off" watermark="First Name" placeholder="First Name" /> <input  id="ln"type="text" maxlength="10" autocomplete="off" watermark="Last Name" placeholder="Last Name" />
+ 
+ 
+     <b>Source:</b>    <input  id="s" type="text" maxlength="10" autocomplete="off" watermark="Source" placeholder="Source" />                        <b>Destination:</b>    <input  id="d" type="text" maxlength="10" autocomplete="off" watermark="Destination" placeholder="Destination" />
+       
+       
+        <b>Sex:</b>    <select name="gender"><option selected="selected" value="Male">Male</option><option value="Female">Female</option></select>
+
+       
+        <b>Age:</b>    <input  id="age" type="text" maxlength="2" autocomplete="off" style="width:2%" />                                  
+
+
+    <b>Country:</b>    <input  id="na" type="text" maxlength="20" autocomplete="off" watermark="Birth Country" placeholder="Birth Country" />
+
+
+  <b>Age Group:</b>    <select name="agegrp"><option>Child(<=12)</option><option selected>Adult(18-60)</option><option>Teen(12-18)</option><option>Aged(>=60)</option></select>
+ 
+ 
+
+      <b>Class:</b>    <select name="class"><option selected="selected" value="All">ALL</option><option value="First Class">First Class </option><option value="Buisness">Buisness</option><option value="Economy">Economy</option><option value="Excursion">Excursion</option></select>                                      
+
+      
+       <b>Date:</b>    <input  id="date" type="date" watermark="DD-MM-YY" placeholder="DD-MM-YY" maxlength="8" />
+
+ 
+   <b>Airlines:</b>    <select name="airlines"><option selected="selected" value="all">ALL</option><option value="jetkonnect">JetKonnect</option><option value="spicejet">Spicejet</option><option value="indigo">Indigo</option><option value="airindia">Air India</option><option value="goair">Go Air</option><option value="jetairways">Jet Airways</option></select>
+  
+    
+    <b>Contact:</b> 
+       Mob.:    <input id="code" type="text" maxlength="3" autocomplete="off" style="width:3%;" /> <input  id="mobile" type="text" maxlength="10" autocomplete="off" watermark="Mobile/Cell No." placeholder="Mobile/Cell No." />                            Phone:    <input id="code" type="text" maxlength="3" autocomplete="off" style="width:3%;" /> <input id="code" type="text" maxlength="3" autocomplete="off" style="width:3%" /> <input id="number" type="text" maxlength="8" autocomplete="off" style="width:7%" />
+       
+       
+     <b>E-mail:</b>    <input id="email" type="email" maxlength="30" autocomplete="off" watermark="Mailing Address" placeholder="Mailing Address" />
+
+
+<i style=" color:rgb(212,0,0)">I accept the terms & service and privacy policy of the SABI Online Reservation System </i> <input type="checkbox" />
+
+
+                                      <a href="index.htm" style="text-decoration:blink;"><input type="button" value="Home"></a> <input type="submit" onClick="pop()" value="Submit"> <input type="reset" value="Reset">
+</form></pre></fieldset>
+</body>
+</html>

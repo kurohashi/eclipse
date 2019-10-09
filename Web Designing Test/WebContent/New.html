@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function func() {
+	document.getElementById("inpu").innerHTML = "<button>new button</button><br /><h1>Hello</h1>";
+}
+
+function goToDate() {
+	date_in_string = "October 13, 2014 11:13:00";
+	d_in_ms = 86400000;
+	d_in_ms_start = 0;
+	var d = new Date(date_in_string);
+	var d_ISO1 = new Date("2015-03-25");
+	var d_ISO2 = new Date("2015-03");
+	var d_ISO3 = new Date("2015");
+	var d_ISO4 = new Date("2015-03-25T12:00:00");
+	document.getElementById("inpu").innerHTML = d_ISO2.toDateString();
+	document.getElementById("demo").innerHTML = d_ISO1.toUTCString();
+}
+
+
+</script>
+</head>
+<body>
+<input name="inp" type="button" value="Click It" onclick="func()" />
+<p id="inpu"></p>
+<p id="demo"></p>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+<br>
+<br>
+<button onclick="goToDate()">Time</button>
+</body>
+</html>
